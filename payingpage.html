@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="media/logo_200x200.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;800&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYING</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/payingpage.css">
+</head>
+<body>
+    <div class="payingform">
+        <form action="post">
+            <h1 class="theborder">Payment Form</h1>
+            <div class="maintext">Account</div>
+            <div class="personal">
+                <div class="firstname theborder have">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Full Name" required minlength="2">
+                </div>
+                <div class="lastname theborder have">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Nic Name" required maxlength="30">
+                </div>
+            </div>
+            <div class="email theborder have">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="" id="" placeholder="Email Adress" required>
+            </div>
+                <div class="dategender">
+                    <div class="dateofbirth">
+                        <div class="maintext">Date Of Birth</div>
+                        <div class="dateinputs">
+                            <input type="text" class="d theborder" placeholder="DD" required minlength="2" maxlength="2">
+                            <input type="text" class="d theborder" placeholder="MM" required minlength="2" maxlength="2">
+                            <input type="text" class="d theborder" placeholder="YYYY" required minlength="4" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="gender">
+                        <div class="maintext">Gender</div>
+                        <div class="genderbuttons theborder">
+                            <button class="theborder prevent" >Male</button>
+                            <button class="theborder prevent" >Female</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="maintext">Payment Details</div>
+                <div class="paymentbuttons theborder">
+                    <div class="left paybutton paymethodcolor prevent"><button><i class="fa-solid fa-credit-card"></i>Credit Card</button></div>
+                    <div class="paybutton prevent"><button><i class="fa-brands fa-paypal"></i>Paypal</button></div>
+                </div>
+                <div class="cardnumber theborder have">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <input type="text" placeholder="Card Number" required >
+                </div>
+                <div class="carddetails">
+                    <div class="cvv theborder have ">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="CVC" required maxlength="3">
+                    </div>
+                    <div class="dates">
+                        <input type="text" class="d theborder" placeholder="DD" required minlength="2" maxlength="2">
+                            <input type="text" class="d theborder" placeholder="MM" required minlength="2" maxlength="2">
+                            <input type="text" class="d theborder" placeholder="YYYY" required minlength="4" maxlength="4">
+                    </div>
+                </div>
+                <div class="gotopaypal paymethodvisible">
+                    <a href="https://paypal.com/eg/home" target="_blank"><i class="fa-brands fa-paypal"></i></a>
+                </div>
+<button type="submit" class="theborder">Pay Now</button>
+            </form>
+    </div>
+    <script src="javascript/payingpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+:root{
+    --maincolor: #19c8fa;
+    --bordercolor:rgba(128, 128, 128, 0.397)
+}
+input{
+    outline: none;
+    background-color: transparent;
+    border: transparent;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.theborder{
+    border:1px solid var(--bordercolor);
+}
+i{
+    font-size: 14px;
+    background-color: #eee;
+    padding: 10px;
+}
+.payingform{
+    width: 450px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.582);
+}
+form{
+    text-align: center;
+    padding: 5px 5% 0px;
+    font-size: 14px;
+}
+form h1{
+    background-color: #eee;
+    margin: 15px 0px;
+    padding: 5px 0px;
+}
+.maintext{
+    text-align: start;
+    margin-bottom: 5px;
+}
+.personal{
+    display: flex;
+    justify-content: space-between;
+}
+.firstname{
+    width: calc(50% - 10px);
+display: flex;
+justify-content: flex-start;
+}
+.firstname input{
+width: 100%;
+}
+.lastname{
+    width: calc(50% - 10px) ;
+    display: flex;
+justify-content: flex-start;
+}
+.lastname input{
+    width: 100%;
+    }
+
+    .email{
+        margin: 15px 0px;
+        width: calc(100% - 1px);
+        display: flex;
+        justify-content: flex-start;
+    }
+    .email input{
+        width: 100%;
+    }
+.dategender{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px
+}
+.dateofbirth{
+    width: calc(50% - 10px);
+}
+.gender{
+    width: calc(50% - 10px);
+}
+.dateinputs{
+    display: flex;
+}
+.dateinputs input{
+    width: 30%;
+    margin-right: 5%;
+height: 35px;
+padding: 0px ;
+text-align: center;
+}
+.genderbuttons{
+    display: flex;
+}
+.genderbuttons button{
+    width: 50%;
+    height: 35px;
+    border-radius: 0px;
+    border: none;
+    outline: 1px solid var(--bordercolor);
+
+}
+
+.paymentbuttons{
+    display: flex;
+    margin-bottom: 15px;
+}
+.paymentbuttons .paybutton{
+    width: 50%;
+}
+.paymentbuttons i{
+    background-color: transparent;
+}
+.paymentbuttons button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 0px;
+    outline: 1px solid var(--bordercolor);
+}
+.cardnumber{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+width: calc(100% - 1px);
+}
+.cardnumber input{
+    width: 100%;
+}
+.carddetails{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.cvv{
+    display: flex;
+    width: calc(50% - 10px);
+}
+.cvv input{
+    width: 100%;
+}
+.dates{
+    display: flex;
+    width: calc(50% - 10px);
+    justify-content: space-between;
+}
+.dates input{
+    width: calc(30% - 5px);
+    text-align: center;
+}
+button[type="submit"]{
+    width: 100%;
+    height: 35px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    background-color: #19c8fa;
+    color: white;
+}
+.gotopaypal a i{
+    font-size: 28px;
+}
+.paymethodcolor button{
+    background-color: var(--maincolor);
+    color: white;
+}
+.gendercolor{
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.paymethodvisible{
+    display: none;
+}
+
+.coloricon i{
+    background-color: var(--maincolor);
+    color: white;
+}
+@media (max-width:600px) {
+    form {
+       font-size: 14px;
+
+    }
+    input{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .payingform{
+width: 350px;
+    }
+}
+@media (max-width:450px) {
+    form {
+       font-size: 12px;
+
+    }
+    input{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .payingform{
+width: 280px;
+    }
+}
