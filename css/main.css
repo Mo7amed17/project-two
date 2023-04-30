@@ -1283,6 +1283,10 @@ transform: translate(-50%);
  .copyrights{
     font-size: 18px;
  }
+.copyrights p{
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+ }
  .copyrights .name{
     color: var(--maincolor);
  }
